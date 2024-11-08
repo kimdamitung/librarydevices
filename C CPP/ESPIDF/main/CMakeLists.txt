@@ -3,6 +3,7 @@ idf_component_register(
                     "main.c"
                     "${CMAKE_CURRENT_SOURCE_DIR}/../src/i2c.c"
                     "${CMAKE_CURRENT_SOURCE_DIR}/../core/src/mpu6050.cpp"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/../core/src/pcf8575.cpp"
     INCLUDE_DIRS    
                     "."
                     "${CMAKE_CURRENT_SOURCE_DIR}/../include/"
