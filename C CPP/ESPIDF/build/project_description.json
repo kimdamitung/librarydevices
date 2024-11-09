@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESPIDF",
-    "project_version":    "cf0a14f-dirty",
+    "project_version":    "abd1ed0-dirty",
     "project_path":       "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF",
     "idf_path":           "E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build",
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/main.c", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/src/i2c.c", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/mpu6050.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/pcf8575.cpp" ],
+            "sources": [ "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/main.c", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/src/i2c.c", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/src/fonts.c", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/mpu6050.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/pcf8575.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/st7735.cpp" ],
             "include_dirs": [ ".", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/../include/", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/../core/include/" ]
         },
         "mbedtls": {

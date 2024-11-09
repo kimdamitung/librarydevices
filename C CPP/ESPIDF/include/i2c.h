@@ -2,6 +2,7 @@
 #define     I2C_H_
 
 #include "driver/i2c.h"
+#include "esp_log.h"
 
 #define I2C_MASTER_SCL_IO           GPIO_NUM_9
 #define I2C_MASTER_SDA_IO           GPIO_NUM_8
