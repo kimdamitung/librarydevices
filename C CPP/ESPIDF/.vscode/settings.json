@@ -32,6 +32,10 @@
         "string": "cpp",
         "string_view": "cpp",
         "span": "cpp",
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "bitset": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "future": "cpp"
     }
 }

@@ -2,7 +2,8 @@
 #define _ST7735_H_
 
 #include <stdint.h>
-#include "driver/spi_common.h"
+#include "driver/spi_master.h"
+#include "driver/gpio.h"
 
 #define MADCTL_MY   0x80
 #define MADCTL_MX   0x40
@@ -12,14 +13,14 @@
 #define MADCTL_BGR  0x08
 #define MADCTL_MH   0x04
 #define IS_160X128  1
-// #define WIDTH     128
-// #define HEIGHT    160
-#define WIDTH       160
-#define HEIGHT      128
+#define WIDTH     128
+#define HEIGHT    160
+// #define WIDTH       160
+// #define HEIGHT      128
 #define XSTART      0
 #define YSTART      0
-// #define ROTATION  (MADCTL_MX | MADCTL_MY)
-#define ROTATION    (MADCTL_MY | MADCTL_MV)
+#define ROTATION  (MADCTL_MX | MADCTL_MY)
+// #define ROTATION    (MADCTL_MY | MADCTL_MV)
 #define NOP         0x00
 #define SWRESET     0x01
 #define RDDID       0x04
@@ -71,6 +72,8 @@
 #define GAMMA_22    0x04
 #define GAMMA_18    0x08
 #define DELAY       0x80
+#define HIGH        1
+#define LOW         0
 
 const uint8_t init_cmds1[] = {
     15,
@@ -110,12 +113,40 @@ const uint8_t init_cmds3[] = {
     100
 };
 
+
+typedef struct{
+    const uint8_t width;
+    uint8_t height;
+    const uint16_t *data;
+}fonts;
+
+extern fonts font_7x10;
+extern fonts font_11x18;
+extern fonts font_16x26;
+
 class st7735{
     private:
         /* data */
+        gpio_num_t cs;
+        gpio_num_t dc;
+        gpio_num_t reset;
+        spi_device_handle_t spi;
+        void select();
+        void unselect();
+        void resets();
+        void write(uint8_t commads);
+        void write(const uint8_t* buffer, size_t size);
+        void commands(const uint8_t* address);
+        void drawpixels(uint16_t x, uint16_t y, uint16_t color);
+        void writeCharacters(uint16_t x, uint16_t y, char characters, fonts font, uint16_t color, uint16_t backgrounds);
     public:
-        st7735(/* args */);
+        st7735(gpio_num_t cs, gpio_num_t dc, gpio_num_t reset, gpio_num_t mosi, gpio_num_t ss);
         ~st7735();
+        uint16_t COLOR565(uint8_t R, uint8_t G, uint8_t B);
+        uint16_t COLOR565(uint16_t color);
+        void setAddressWindows(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1);
+        void writeStrings(uint16_t x, uint16_t y, const char* strings, fonts font, uint16_t color, uint16_t backgrounds);
+        void setImages(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t* data);
 };
 
 #endif // _ST7735_H_
