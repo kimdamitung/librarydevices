@@ -1,0 +1,32 @@
+fatal: detected dubious ownership in repository at 'E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1'
+'E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	DESKTOP-FOALU9O/duytung (S-1-5-21-904358070-1409795228-1158507969-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1
+fatal: detected dubious ownership in repository at 'E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1'
+'E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	DESKTOP-FOALU9O/duytung (S-1-5-21-904358070-1409795228-1158507969-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1
+fatal: detected dubious ownership in repository at 'E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread'
+'E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread/.git' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	DESKTOP-FOALU9O/duytung (S-1-5-21-904358070-1409795228-1158507969-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread
+CMake Error at E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:314 (message):
+  Include directory 'D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/include'
+  is not a directory.
+Call Stack (most recent call first):
+  E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:482 (__component_add_include_dirs)
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
