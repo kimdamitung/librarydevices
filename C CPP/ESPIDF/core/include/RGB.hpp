@@ -19,5 +19,16 @@ class RGB {
         void fill(uint8_t r, uint8_t g, uint8_t b);
         void show();
 };
-
+/*
+extern "C" void app_main() {
+    RGB led(GPIO_NUM_48, 1);
+    while (true){
+        led.fill(255, 0, 0);
+        led.show();
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        led.fill(0, 255, 0);
+        led.show();
+    }
+}
+*/
 #endif // _RGB_H_

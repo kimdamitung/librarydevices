@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESPIDF",
-    "project_version":    "eed04b4-dirty",
+    "project_version":    "29f6b71-dirty",
     "project_path":       "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF",
     "idf_path":           "E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build",
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/main.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/RGB.cpp" ],
+            "sources": [ "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/main.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/RGB.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/ST7735.cpp" ],
             "include_dirs": [ ".", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/../core/include/" ]
         },
         "mbedtls": {
