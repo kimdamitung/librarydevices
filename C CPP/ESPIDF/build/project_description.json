@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESPIDF",
-    "project_version":    "29f6b71-dirty",
+    "project_version":    "2d17d7a-dirty",
     "project_path":       "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF",
     "idf_path":           "E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build",
