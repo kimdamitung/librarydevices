@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESPIDF",
-    "project_version":    "2d17d7a-dirty",
+    "project_version":    "02907fc-dirty",
     "project_path":       "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF",
     "idf_path":           "E:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build",
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/main.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/RGB.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/ST7735.cpp" ],
+            "sources": [ "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/main.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/RGB.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/BUZZER.cpp", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/core/src/ESPNOW.cpp" ],
             "include_dirs": [ ".", "D:/HowToWriteCode/LibraryDevices/C CPP/ESPIDF/main/../core/include/" ]
         },
         "mbedtls": {
